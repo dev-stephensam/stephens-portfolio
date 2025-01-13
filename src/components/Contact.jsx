@@ -60,9 +60,9 @@ const Contact = () => {
                     onSubmit={handleSubmit}
                     className='flex flex-col '
                 >
-                    <input type="text" placeholder="Name" className="my-2 p-2 border border-neutral-900 bg-transparent" id='entry.2005620554' name='entry.2005620554' />
-                    <input type="email" placeholder="Email" className="my-2 p-2 border border-neutral-900 bg-transparent" id='entry.1045781291' name='entry.1045781291'/>
-                    <textarea placeholder="Message" className="my-2 p-2 border border-neutral-900 bg-transparent" rows="4" id='entry.839337160' name='entry.839337160'></textarea>
+                    <input type="text" placeholder="Name" className="my-2 p-2 border border-neutral-900 bg-transparent" id='entry.2005620554' name='entry.2005620554' required />
+                    <input type="email" placeholder="Email" className="my-2 p-2 border border-neutral-900 bg-transparent" id='entry.1045781291' name='entry.1045781291' required/>
+                    <textarea placeholder="Message" className="my-2 p-2 border border-neutral-900 bg-transparent" rows="4" id='entry.839337160' name='entry.839337160'required ></textarea>
                     <button type="submit" className="my-2 p-2 bg-neutral-900 text-white">Submit</button>
                 </form>
                 <iframe name="hidden_iframe" style={{ display: 'none' }} onLoad={showSuccessAlert}></iframe>
