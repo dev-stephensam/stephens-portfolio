@@ -58,6 +58,7 @@ const Contact = () => {
                     method='POST'
                     target='hidden_iframe'
                     onSubmit={handleSubmit}
+                    className='flex flex-col '
                 >
                     <input type="text" placeholder="Name" className="my-2 p-2 border border-neutral-900 bg-transparent" id='entry.2005620554' name='entry.2005620554' />
                     <input type="email" placeholder="Email" className="my-2 p-2 border border-neutral-900 bg-transparent" id='entry.1045781291' name='entry.1045781291'/>
