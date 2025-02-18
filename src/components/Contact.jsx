@@ -26,12 +26,8 @@ const Contact = () => {
 
   return (
     <div className='border-b border-neutral-900 pb-20'>
-        <motion.h1 
-        whileInView={{y:0, opacity:1, rotate:360}}
-        initial={{y:-100, opacity:0, rotate:0}}
-        transition={{duration:1}}
-        className="my-10 text-center text-4xl">Get in Touch</motion.h1>
-        <div className="flex flex-col md:flex-row justify-between items-center">
+        <h1 className="my-10 text-center text-4xl">Get in Touch</h1>
+        <div className="flex flex-col md:flex-row justify-between items-center mx-20 gap-x-10">
             <div className="text-center tracking-tighter md:w-1/3">
                 <p className="my-4">{CONTACT.address}</p>
                 <p className="my-4">{CONTACT.phoneNo}</p>
@@ -58,12 +54,12 @@ const Contact = () => {
                     method='POST'
                     target='hidden_iframe'
                     onSubmit={handleSubmit}
-                    className='flex flex-col '
+                    className='flex flex-col'
                 >
-                    <input type="text" placeholder="Name" className="my-2 p-2 border border-neutral-900 bg-transparent" id='entry.2005620554' name='entry.2005620554' required />
-                    <input type="email" placeholder="Email" className="my-2 p-2 border border-neutral-900 bg-transparent" id='entry.1045781291' name='entry.1045781291' required/>
-                    <textarea placeholder="Message" className="my-2 p-2 border border-neutral-900 bg-transparent" rows="4" id='entry.839337160' name='entry.839337160'required ></textarea>
-                    <button type="submit" className="my-2 p-2 bg-neutral-900 text-white">Submit</button>
+                    <input type="text" placeholder="Name" className="my-2 p-2 border border-neutral-400  rounded-xl bg-transparent" id='entry.2005620554' name='entry.2005620554' required />
+                    <input type="email" placeholder="Email" className="my-2 p-2 border border-neutral-400  rounded-xl bg-transparent" id='entry.1045781291' name='entry.1045781291' required/>
+                    <textarea placeholder="Message" className="my-2 p-2 border border-neutral-400 bg-transparent rounded-xl " rows="4" id='entry.839337160' name='entry.839337160'required ></textarea>
+                    <button type="submit" className="my-2 p-2 bg-neutral-800 text-white">Submit</button>
                 </form>
                 <iframe name="hidden_iframe" style={{ display: 'none' }} onLoad={showSuccessAlert}></iframe>
             </div>

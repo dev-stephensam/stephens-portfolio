@@ -69,15 +69,7 @@ const Technologies = () => {
                 <RiReactjsLine className="text-7xl text-blue-500" />
                 <p className="text-center">React.js</p>
             </motion.div>
-            <motion.div 
-            variants={iconVariants(1)}
-            initial='initial'
-            animate='animate'
-
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-                <RiNodejsLine className="text-7xl text-green-500" />
-                <p className="text-center">Node.js</p>
-            </motion.div>
+            
             <motion.div 
             variants={iconVariants(3)}
             initial='initial'
@@ -96,36 +88,7 @@ const Technologies = () => {
                 <RiBootstrapLine className="text-7xl text-purple-500" />
                 <p className="text-center">Bootstrap</p>
             </motion.div>   
-            <motion.div 
-            variants={iconVariants(1.5)}
-            initial='initial'
-            animate='animate'
-
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-                <TbBrandDjango className="text-7xl text-green-700" />
-                <p className="text-center">Django</p>
-            </motion.div>
-            <motion.div 
-            variants={iconVariants(2.3)}
-            initial='initial'
-            animate='animate'
-
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-                <SiFlask className="text-7xl" />
-                <p className="text-center">Flask</p>
-            </motion.div>
-            <motion.div 
-            variants={iconVariants(1.5)}
-            initial='initial'
-            animate='animate'
-
-            className="rounded-2xl border-4 border-neutral-800 p-4">
-                <TbBrandMysql className="text-7xl text-blue-700"  />
-                <p className="text-center">MySQL</p>
-            </motion.div>
             
-
-
         </motion.div>
     </div>
   )
